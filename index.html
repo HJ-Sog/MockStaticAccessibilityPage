@@ -5,50 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contrast Test Page</title>
     <style>
-        .example-1 {
-            background-color: white;
-            color: black;
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .example-2 {
-            background-color: white;
+        header {
+            background-color: black;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+
+        .main-content{
+            margin: 80px;
+        }
+                
+        .scheme-1 {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+
+        .scheme-2 {
+            background-color: rgb(255, 255, 255);
             color: rgb(148, 148, 148);
-        }
-
-        .example-3 {
-            background-color: rgb(255, 213, 0);
-            color: rgb(225, 109, 0);
         }
     </style>
 </head>
 <body>
-    <div class="example-1">
-        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
-    </div>
-
-    <div class="example-2">
-<table>
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td class="example-3">Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-</table>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-
-    <div class="example-3">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
+    <header class="">
+        Contrast Test Page
+    </header>
+    <section class="main-content">
+        <div class="scheme-1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="scheme-2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </section>
+    <footer>
+        Footer
+    </footer>
 </body>
 </html>
